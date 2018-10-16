@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="jorge-posada">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jorge Posada | Portafolio</title>
+    <!-- <link rel="stylesheet" href="css/vendor.min.css"> -->
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="logo" ui-sref="portafolio">Jorge Posada</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" ui-sref-active="active" ui-sref="portafolio">Inicio</a>
+                <a class="nav-item nav-link" ui-sref-active="active" ui-sref="sobre-mi">Sobre mí</a>
+                <a class="nav-item nav-link" href="files/jorge-posada-hdv.pdf" target="_blank">Currículum</a>
+                <a class="nav-item nav-link" href="https://www.behance.net/cokehm" target="_blank">Behance</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <ui-view></ui-view>
+    </div>
+
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="col-12">
+                <ul class="nav justify-content-center py-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="mailto:cokehm@gmail.com"
+                            target="_blank">
+                            <i class="far fa-lg fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://api.whatsapp.com/send?phone=573192161265"
+                            target="_blank">
+                            <i class="fab fa-lg fa-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://www.instagram.com/cokecokeine/" target="_blank">
+                            <i class="fab fa-lg fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/Cokeine23" target="_blank">
+                            <i class="fab fa-lg fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
