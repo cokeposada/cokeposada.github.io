@@ -1,0 +1,231 @@
+@import "bower_components/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&display=swap');
+
+$blue1 : #3f5cdb;
+$blue2 : #496dfb;
+$purple1 : #534eb7;
+$purple2 : #8a6fea;
+$purple3 : #e4e9ff;
+$yellow : #f1c808;
+
+$sombra1 : -5px 5px 0 rgba(135, 184, 253, 0.25);
+$sombra2 : -5px 5px 0 rgba(73, 109, 251, 0.25);
+
+.bg-light {
+    background-color: $purple3 !important;
+}
+
+.bg-dark {
+    background-color: $purple1 !important;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-image: url(../images/home-bg.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 226% -32%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 56px;
+
+    @include media-breakpoint-only(md) {
+        background-size: 90%;
+        background-position: 500% -10%;
+    }
+
+    @include media-breakpoint-only(sm) {
+        background-size: 170%;
+        background-position: center 3%;
+    }
+
+}
+
+a {
+    color: $blue2;
+
+    &:hover {
+        color: $blue2;
+    }
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display SC', serif;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 3rem;
+
+    @include media-breakpoint-down(md) {
+        font-size: 2.5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 2rem;
+    }
+}
+
+.logo {
+    font-family: 'Playfair Display SC', serif;
+    color: $blue2;
+    text-shadow: $sombra1;
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -5px;
+    transition: all 0.3s;
+
+    &:hover {
+        color: $blue1;
+        text-decoration: none;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 3.5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 2.1rem;
+        letter-spacing: -3px;
+    }
+}
+
+.btn {
+    border-radius: 2rem !important;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &.btn-primary {
+        color: #fff;
+        background-color: $blue2;
+        border-color: $blue2;
+        box-shadow: $sombra2;
+
+        &:hover {
+            background-color: $blue1;
+        }
+    }
+
+    &.btn-warning {
+        background-color: $yellow;
+        border-color: $yellow;
+        box-shadow: $sombra2;
+
+        &:hover {
+            background-color: $yellow;
+        }
+    }
+}
+
+.card {
+    border-radius: 1rem !important;
+    border: none;
+
+    .card-img,
+    .card-img-top {
+        border-top-left-radius: calc(1rem - 1px);
+        border-top-right-radius: calc(1rem - 1px);
+    }
+
+    .card-title {
+        color: $purple1;
+    }
+
+    .card-footer {
+        border-color: $purple3;
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.navbar {
+    padding: 1.5rem 1rem;
+
+    .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+
+        &.btn-warning {
+            box-shadow: $sombra2;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin: 1rem;
+        }
+
+    }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    background: $yellow;
+    border-radius: 3rem;
+    border: none;
+    padding: 9px;
+    box-shadow: $sombra2;
+    transition: box-shadow 0.3s;
+}
+
+.sombra {
+    box-shadow: $sombra2;
+}
+
+.rounded-top {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+}
+
+.rounded {
+    border-radius: 1rem !important;
+}
+
+.progress {
+    height: 1rem;
+    background-color: #85b5fe;
+    border-radius: 1rem;
+}
+
+.underline {
+    display: block;
+    background: $purple2;
+    border-radius: 1rem !important;
+    height: 8px;
+    width: 48px;
+    border: 0;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    i {
+        color: white;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
