@@ -34,12 +34,12 @@ body {
     font-weight: 300;
     margin-bottom: 56px;
 
-    @include media-breakpoint-only(md) {
+    @include media-breakpoint-down(md) {
         background-size: 90%;
         background-position: 500% -10%;
     }
 
-    @include media-breakpoint-only(sm) {
+    @include media-breakpoint-down(sm) {
         background-size: 170%;
         background-position: center 3%;
     }
@@ -140,6 +140,7 @@ h1 {
     }
 
     .card-title {
+        font-family: 'Montserrat', sans-serif;
         color: $purple1;
     }
 
