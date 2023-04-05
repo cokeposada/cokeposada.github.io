@@ -1,0 +1,76 @@
+<mjml lang="es">
+  <mj-head>
+    <mj-title>¡Revisa y renueva tu póliza ahora!</mj-title>
+    <mj-preview>No dejes de trabajar ni un solo día, te asesoramos durante todo el proceso.</mj-preview>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" />
+    <mj-attributes>
+      <mj-text color="#303030" />
+      <mj-image padding="0" />
+      <mj-button color="#1754F1" text-decoration="underline" background-color="transparent" align="left" padding="0" />
+      <mj-class name="white" color="white" />
+      <mj-class name="blue" color="#1754F1" />
+      <mj-class name="bold" font-weight="bold" />
+      <mj-all font-family="Open Sans, Tahoma, Geneva, sans-serif" font-size="16px" line-height="1.2" font-weight="300" align="left" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .fix-alt img {
+        font-size: 16px;
+      }
+
+      img {
+        image-rendering: -webkit-optimize-contrast;
+      }
+
+      a {
+        color: #1754F1;
+        text-decoration: underline;
+      }
+
+      sup {
+        font-size: 10px;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body width="650px" background-color="white">
+    <!-- Top section -->
+    <mj-section>
+      <mj-column>
+        <mj-image src="images/top@2x.png" alt="Tropical Insurance" css-class="fix-alt" />
+      </mj-column>
+    </mj-section>
+    <!-- Mail section -->
+    <mj-section padding-top="0">
+      <mj-column>
+        <mj-text mj-class="blue" font-size="26px">Estimado <strong>[Nombre del destinatario],</strong></mj-text>
+        <mj-text><strong style="color: #1754F1;">Tropical Insurance</strong> ofrece una cobertura completa y personalizada para satisfacer las necesidades de cada cliente. Además, estamos ofreciendo una promoción exclusiva para nuevos clientes que contraten una póliza de seguros antes de fin de mes. <strong style="color: #1754F1;">¡Podrás ahorrar hasta un 10% en tu primera póliza!</strong></mj-text>
+        <mj-spacer />
+        <mj-text padding="0 20px" font-size="18px">¿Qué esperas para aprovechar el momento?</mj-text>
+        <mj-text padding="0 20px" mj-class="blue bold" font-size="26px">Cotiza con nosotros ahora.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column background-color="#1754F1" vertical-align="middle">
+        <mj-spacer />
+        <mj-text padding="0 20px" align="left" mj-class="white" font-size="22px"><strong>CARLOS</strong> SALCEDO</mj-text>
+        <mj-text padding="0 20px" align="left" mj-class="white"><strong>Asesor</strong> Comercial</mj-text>
+        <mj-spacer />
+        <mj-social align="left">
+          <mj-social-element src="images/icon-phone@2x.png" alt="Phone:" css-class="fix-alt" icon-size="14px" font-size="20px" color="white" text-padding="5px 10px" line-height="1" href="tel:2106860692"><strong>(210) 686-0692</strong></mj-social-element>
+          <mj-social-element src="images/icon-email@2x.png" alt="Email:" css-class="fix-alt" icon-size="16px" font-size="20px" color="white" text-padding="5px 10px" line-height="1" href="mailto:carlos@tropins.com"><strong>carlos@tropins.com</strong></mj-social-element>
+        </mj-social>
+        <mj-spacer />
+      </mj-column>
+      <mj-column background-color="#FF5757" vertical-align="middle">
+        <mj-spacer />
+        <mj-text font-size="18px" align="left" mj-class="white bold">Servicios</mj-text>
+        <mj-social align="left">
+          <mj-social-element src="images/icon-star@2x.png" icon-size="13px" font-size="14px" color="white" text-padding="0 5px" line-height="1"><strong>Aseguranza </strong>Comercial.</mj-social-element>
+          <mj-social-element src="images/icon-star@2x.png" icon-size="13px" font-size="14px" color="white" text-padding="0 5px" line-height="1"><strong>Creación </strong>de Compañías y permisos.</mj-social-element>
+          <mj-social-element src="images/icon-star@2x.png" icon-size="13px" font-size="14px" color="white" text-padding="0 5px" line-height="1"><strong>Revisión </strong>de documentos.</mj-social-element>
+          <mj-social-element src="images/icon-star@2x.png" icon-size="13px" font-size="14px" color="white" text-padding="0 5px" line-height="1"><strong>Actualizaciones </strong>de permisos.</mj-social-element>
+        </mj-social>
+        <mj-spacer />
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
