@@ -1,4 +1,4 @@
-@import "bower_components/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&display=swap');
 
@@ -85,11 +85,11 @@ h1 {
 .logo {
     font-family: 'Playfair Display SC', serif;
     color: $blue2;
-    text-shadow: $sombra1;
     font-size: 4rem;
     line-height: 1;
     letter-spacing: -5px;
     transition: all 0.3s;
+    text-shadow: $sombra1;
 
     &:hover {
         color: $blue1;
@@ -106,6 +106,10 @@ h1 {
     }
 }
 
+.cokeposada{
+    filter: drop-shadow(-5px 5px 0 #496dfb5c);
+}
+
 .btn {
     border-radius: 2rem !important;
     font-weight: 500;
@@ -115,9 +119,9 @@ h1 {
         color: #fff;
         background-color: $blue2;
         border-color: $blue2;
-        box-shadow: $sombra2;
-
+        
         &:hover {
+            box-shadow: $sombra2;
             background-color: $blue1;
         }
     }
@@ -141,6 +145,12 @@ h1 {
     .card-img-top {
         border-top-left-radius: calc(1rem - 1px);
         border-top-right-radius: calc(1rem - 1px);
+    }
+
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .card-title {
